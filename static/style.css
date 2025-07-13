@@ -1,0 +1,100 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-image: radial-gradient(rgb(233, 84, 84)10%, rgb(117, 224, 75), rgb(107, 204, 221));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    text-align: center;
+    padding: 8px 16px;
+    background-color: rgba(255, 255, 255, 0.25);
+    box-shadow: 0px 0px 8px 3px rgb(14, 13, 13);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.container h1 {
+    font-size: 2.5rem;
+}
+
+.show-attempt {
+    font-size: 1.5rem;
+    opacity: 0.75;
+}
+
+.show-attempt span {
+    color: rgb(221, 17, 34);
+}
+
+.container form{
+    font-size: 1.5rem;
+    color: rgb(4, 5, 5);
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 5px;
+}
+
+.container form input{
+    height: 25px;
+    width: 250px;
+    padding: 2px 4px;
+    font-size: 1.2rem;
+    background-color: rgba(128, 128, 128, 0.25);
+    border: none;
+    border-bottom: 2px solid rgb(73, 71, 71);
+    border-radius: 3px;
+}
+
+.container form p{
+    padding: 5px 10px;
+    width: 100%;
+    text-align: center;
+    font-size: 1.2rem;
+    color: rgb(248, 238, 238);
+}
+
+.container form button{
+    padding: 4px 6px;
+    margin: 5px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    align-self: center;
+    border-radius: 7px;
+    border: 2px solid rgba(90, 160, 137, 0.8);
+    background-color: rgba(90, 160, 137, 0.8);
+    transition: all 0.2s linear;
+}
+
+.container form button:hover{
+    color: rgba(90, 160, 137, 1);
+    border: 2px solid rgba(90, 160, 137, 0.8);
+    background-color: transparent;
+    transform: scale(1.1);
+}
+
+@media (max-width: 500px) {
+    .container {
+        width: 100%;
+    }
+
+    .container h1 {
+        font-size: 2rem;
+    }
+
+    .show-attempt {
+        font-size: 1rem;
+    }
+}

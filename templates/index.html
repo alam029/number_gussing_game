@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>number guessing game</title>
+    <!-- add website logo -->
+    <link rel="icon" href="#">
+    <!-- link style.css file -->
+    <link rel="stylesheet" href="../static/style.css">
+     
+</head>
+<body>
+    
+    <div class="container">
+        <h1>Number Guessing GAme</h1>
+        <div class="show-attempt">
+            <h3>No. of Attempt: <span>{{attempt}}</span></h3>
+        </div>
+        <form method="post">
+            <label for="number">Guess a Number: <input type="number" id="number" max="100" min="1" name="number"></label>
+            <p>{{message}}</p>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+</body>
+</html>
